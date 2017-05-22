@@ -1,0 +1,42 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+}
+
+#loading {
+	text-align: center;
+	padding-top: 80px;
+    font-size: 4em;
+}
+
+.fa-mobile {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.grey {
+	color: #999;
+}
+
+.fa-mobile:before, .fa-mobile:after {
+    font-size: 1.4em;
+}
+
+.right-col {
+	display: inline-block;
+	float: right;
+	padding-right: 5px;
+}
+
+.left-col {
+	display: inline-block;
+	float: left;
+}
+
+.datetime {
+	padding-right: 7px;
+}
+
+.space {
+	margin-right: 3px;
+}

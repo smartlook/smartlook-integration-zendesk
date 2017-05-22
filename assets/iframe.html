@@ -1,0 +1,44 @@
+<html>
+	<head>
+	<link href="https://cdn.jsdelivr.net/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="content">
+			<div id="loading">
+				<i class="fa fa-spinner fa-3 fa-spin" aria-hidden="true"></i>
+			</div>
+		</div>
+		<script id="main-template" type="text/x-handlebars-template">
+			{{#each sessions}}
+				<div class="sessions">
+					<div class="left-col">
+						<a href="https://www.smartlook.com/app/play/{{id}}" target="_blank"><i class="fa fa-play-circle" aria-hidden="true"></i> Play session</a> 
+						({{secondsFormatting sessionDuration}})
+					</div>
+
+					<div class="right-col">
+						<span class="datetime">{{timestampToDate timeStart}}</span>
+						<i class="fa space grey fa-{{deviceIcon deviceType}}" aria-hidden="true"></i>
+						<i class="fa grey fa-{{browserIcon visitorBrowserCode}}" aria-hidden="true"></i>
+					</div>
+				 </div>
+			{{/each}}
+		</script>
+
+		<script id="error-template" type="text/x-handlebars-template">
+			<p>{{status}} - {{statusText}}</p>
+		</script>
+
+		<script src="https://use.fontawesome.com/dc5c0011a8.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/jquery/3.0.0/jquery.min.js"></script>
+		<script type="text/javascript" src="https://assets.zendesk.com/apps/sdk/2.0/zaf_sdk.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/helpers.js"></script>
+	</body>
+</html>
+
+
+
