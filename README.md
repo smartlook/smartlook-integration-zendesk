@@ -6,6 +6,8 @@ Zendesk marketplace application
 Requirements:
   - Ruby
   - ZAT gem
+  - Npm
+  - Gulp
 
 ### Installing Ruby on Mac OS X
 1. Go to http://railsinstaller.org/en and download the Mac installer.
@@ -22,6 +24,7 @@ After application editions run validator
 `$ zat validate`
 
 If everything is OK then
+`$ gulp`
 `$ zat package`
 and you are ready to upload it into Zendesk Marketplace
 
