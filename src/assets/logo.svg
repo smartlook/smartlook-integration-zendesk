@@ -1,10 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
-<path id="Fill-3" d="M1.5,6.1C1.3,5.9,1,6,1,6.4l0,7c0,0.3,0.2,0.7,0.5,0.9l6,3.6C7.8,18.1,8,18,8,17.6l0-7.1c0-0.3-0.2-0.7-0.5-0.9
-	L1.5,6.1z"/>
-<path id="Fill-5" d="M10.5,17.9c-0.3,0.2-0.5,0-0.5-0.3l0-7c0-0.3,0.2-0.7,0.5-0.9l6-3.6C16.8,5.9,17,6,17,6.4l0,7.1
-	c0,0.3-0.2,0.7-0.5,0.9L10.5,17.9z"/>
-<path id="Fill-1" d="M2.2,3.7c-0.3,0.2-0.3,0.4,0,0.6l6.2,3.6C8.7,8,9.2,8,9.4,7.9l6.3-3.6c0.3-0.2,0.3-0.4,0-0.6L9.5,0.1
-	C9.2,0,8.8,0,8.5,0.1L2.2,3.7z"/>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="320.000000pt" height="320.000000pt" viewBox="0 0 320.000000 320.000000"
+ preserveAspectRatio="xMidYMid meet">
+<metadata>
+Created by potrace 1.14, written by Peter Selinger 2001-2017
+</metadata>
+<g transform="translate(0.000000,320.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M683 1873 c-8 -3 0 -16 22 -37 30 -29 35 -40 35 -79 0 -94 -106 -143
+-178 -82 -30 25 -31 25 -37 5 -17 -55 22 -158 79 -208 113 -99 294 -64 360 70
+61 123 8 271 -116 322 -35 15 -138 21 -165 9z"/>
+<path d="M2323 1873 c-8 -3 0 -16 22 -37 28 -27 35 -41 35 -70 0 -72 -41 -115
+-107 -116 -30 0 -50 7 -72 26 l-30 25 -7 -25 c-15 -60 22 -153 80 -204 113
+-99 294 -64 360 70 61 123 8 271 -116 322 -35 15 -138 21 -165 9z"/>
+</g>
 </svg>
