@@ -1,0 +1,25 @@
+{
+  "name": "smartlook-zendesk",
+  "version": "1.0.0",
+  "description": "Zendesk marketplace application",
+  "main": "Gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-minify": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smartsupp/smartlook-zendesk.git"
+  },
+  "author": "Michal Hlavka <michal.hlavka@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smartsupp/smartlook-zendesk/issues"
+  },
+  "homepage": "https://github.com/smartsupp/smartlook-zendesk#readme"
+}
