@@ -13,7 +13,7 @@ APP.init = function() {
 
 APP.getSessions = function(client, token, email) {
 	var sessions = {
-		url:'https://www-beta.smartlook.com/api/sessions.list',
+		url:'https://www.smartlook.com/api/sessions.list',
 		type:'POST',
 		data: {
 			apiKey: token,
