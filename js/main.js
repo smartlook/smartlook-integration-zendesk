@@ -28,7 +28,7 @@ APP.getSessions = function(client, token, email) {
 
 	client.request(sessions).then(
 		function(data) {
-			APP.showSessions(data);
+			APP.showSessions(client, data);
 		},
 		function(response) {
 			APP.showError(response);
@@ -55,9 +55,10 @@ APP.getUser = function(client, id) {
 	);
 }
 
-APP.showSessions = function(data) {
+APP.showSessions = function(client, data) {
 	if (typeof data.sessions === 'undefined' || !data.sessions.length) {
 		APP.templateCompile({}, "noRecordings-template");
+		client.invoke('resize', { width: '100%', height: '80px' });
 		return;
 	}
 
