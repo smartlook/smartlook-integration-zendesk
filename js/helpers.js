@@ -1,14 +1,19 @@
+Handlebars.registerHelper('if', function(conditional, options) {
+	if(conditional) {
+		return options.fn(this);
+	}
+});
 
 Handlebars.registerHelper('secondsFormatting', function(seconds) {
-		var result = '';
-		if (seconds < 60) {
-			result = formatSeconds(seconds);
-		} else if (seconds < 60 * 60) {
-			result = formatMinutes(seconds);
-		} else {
-			result = formatHours(seconds);
-		}
-		return result;
+	var result = '';
+	if (seconds < 60) {
+		result = formatSeconds(seconds);
+	} else if (seconds < 60 * 60) {
+		result = formatMinutes(seconds);
+	} else {
+		result = formatHours(seconds);
+	}
+	return result;
 });
 
 Handlebars.registerHelper('platformIcon', function(platform) {

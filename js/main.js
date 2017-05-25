@@ -56,6 +56,11 @@ APP.getUser = function(client, id) {
 }
 
 APP.showSessions = function(data) {
+	if (typeof data.sessions === 'undefined' || !data.sessions.length) {
+		APP.templateCompile({}, "noRecordings-template");
+		return;
+	}
+
 	var sessionsData = {
 		'sessions': data.sessions
 	};

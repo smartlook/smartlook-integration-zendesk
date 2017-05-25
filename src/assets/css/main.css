@@ -40,3 +40,8 @@ body {
 .space {
 	margin-right: 3px;
 }
+
+#noRecordings {
+	text-align: center;
+	padding-top: 80px;
+}
