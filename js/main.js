@@ -46,7 +46,7 @@ APP.getUser = function(client, id) {
 	client.request(user).then(
 		function(data) {
 			client.metadata().then(function(metadata) {
-				APP.getSessions(client, metadata.settings.token, data.user.email);
+				APP.getSessions(client, metadata.settings['API token'], data.user.email);
 			});
 		},
 		function(response) {

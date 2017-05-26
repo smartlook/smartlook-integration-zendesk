@@ -1,9 +1,9 @@
 {
   "name": "Smartlook",
   "author": {
-    "name": "Michal Hlavka",
-    "email": "michal.hlavka@gmail.com",
-    "url": ""
+    "name": "Smartlook",
+    "email": "info@smartlook.com",
+    "url": "https://www.smartlook.com"
   },
   "defaultLocale": "en",
   "private": true,
@@ -14,7 +14,7 @@
   },
   "parameters": [
     {
-      "name": "token",
+      "name": "API token",
       "type": "text",
       "required": true
     }
