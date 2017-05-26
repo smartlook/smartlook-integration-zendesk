@@ -6,7 +6,7 @@
     "url": "https://www.smartlook.com"
   },
   "defaultLocale": "en",
-  "private": true,
+  "private": false,
   "location": {
     "support": {
       "ticket_sidebar": "assets/iframe.html"
@@ -16,7 +16,7 @@
     {
       "name": "API token",
       "type": "text",
-      "required": false
+      "required": true
     }
   ],
   "version": "1.0",
