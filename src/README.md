@@ -20,6 +20,8 @@ Translated in 15 languages
 Please submit bug reports to [https://github.com/smartsupp/smartlook-zendesk/issues](https://github.com/smartsupp/smartlook-zendesk/issues). Pull requests are welcome.
 
 ### Screenshots:
-![screenshot-0](https://github.com/smartsupp/smartlook-zendesk/blob/master/src/assets/screenshot-0.png =300x225 "Screenshot 1")
-![screenshot-1](https://github.com/smartsupp/smartlook-zendesk/blob/master/src/assets/screenshot-1.png =300x225 "Screenshot 2")
-![screenshot-2](https://github.com/smartsupp/smartlook-zendesk/blob/master/src/assets/screenshot-2.png =300x225 "Screenshot 3")
+![screenshot-0](https://github.com/smartsupp/smartlook-zendesk/blob/master/src/assets/screenshot-0.png "Screenshot 1")
+
+![screenshot-1](https://github.com/smartsupp/smartlook-zendesk/blob/master/src/assets/screenshot-1.png "Screenshot 2")
+
+![screenshot-2](https://github.com/smartsupp/smartlook-zendesk/blob/master/src/assets/screenshot-2.png "Screenshot 3")
