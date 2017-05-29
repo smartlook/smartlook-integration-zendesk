@@ -50,13 +50,12 @@ Handlebars.registerHelper('timestampToDate', function(timestamp) {
 	var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
 	var date = new Date(timestamp * 1000);
 	var minutes = "0" + date.getMinutes();
-	var hours = date.getHours();
-	var postfix = 'am';
 
-	if (hours >= 12) {
-		hours = hours - 12;
-		postfix = 'pm';
-	}
+	var hours = date.getHours();
+	var postfix = hours >= 12 ? 'pm' : 'am';
+	var hours = hours % 12;
+	var hours = hours ? hours : 12;
+
 
 	return months[date.getMonth()] + ' ' + date.getDate() + ',' + ' ' + hours + ':' + minutes.substr(-2) + ' ' + postfix;
 });
