@@ -12,10 +12,10 @@ Smartlook shows all recordings of a visitor in one place. This gives you greater
 When you discover bad user experience on your website, simply send a link with the recording to your UX designer or developer, so everyone can see what the issue is.
 
 ## Other unique things Smartlook offers
-Always on recording - Visitor recording is continuous. Smartlook will keep recording all visitors.
-Recording ajax & single-page app - We support all of the latest frontend frameworks (AngularJS, React, Ember, …)
-Unlimited number of website recorded
-Translated in 15 languages
+- Always on recording - Visitor recording is continuous. Smartlook will keep recording all visitors
+- Recording ajax & single-page app - We support all of the latest frontend frameworks (AngularJS, React, Ember, …)
+- Unlimited number of website
+- Translated in 15 languages
 
 Please submit bug reports to [https://github.com/smartsupp/smartlook-zendesk/issues](https://github.com/smartsupp/smartlook-zendesk/issues). Pull requests are welcome.
 
