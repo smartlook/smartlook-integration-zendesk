@@ -1,16 +1,9 @@
 {
   "app": {
-    "description": "Play the famous zen tunes in your help desk.",
-    "name": "Buddha Machine"
-  },
-  "loading": "Welcome to this Sample App",
-  "fetch": {
-    "done": "Good",
-    "fail": "failed to fetch information from the server"
-  },
-  "id": "ID",
-  "email": "Email",
-  "name": "Name",
-  "role": "Role",
-  "groups": "Groups"
+    "description": "Smartlook is a simple tool which records the screens of real users on your website. You can see what visitors clicked with their mouse, what they filled into a form field, where they spend most of their time, and how they browse through each page.",
+    "name": "Smartlook",
+    "parameters": {
+      "API toke"    : { "label": "API token", "helpText": "API token g" }
+    }
+  }
 }
