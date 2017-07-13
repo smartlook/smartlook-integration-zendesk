@@ -1,35 +1,27 @@
-# Smartlook Zendesk application
-Zendesk marketplace application
+# Smartlook
 
-# Development enviroment installation
+Smartlook is a simple tool which records the screens of real users on your website. You can see what visitors clicked with their mouse, what they filled into a form field, where they spend most of their time, and how they browse through each page.
 
-Requirements:
-  - Ruby
-  - ZAT gem
-  - Npm
-  - Gulp
+## See visitor behavior in a video
+Play video recordings of visitors and see what they actually do on your website.  The Smartlook App for Zendesk is suitable for your support staff while troubleshooting customer issues. It gets you unique insight into what happened before and after a user submitted Zendesk ticket. They will never need to ask for more information.
 
-### Installing Ruby on Mac OS X
-1. Go to http://railsinstaller.org/en and download the Mac installer.
-2. Double-click the downloaded file and follow the instructions.
-3. The wizard installs a lot of files. If the installation appears to freeze, give it time. It'll finish eventually.
+## Visitor journey
+Smartlook shows all recordings of a visitor in one place. This gives you greater insight and context about the visitor’s behavior. E.g. a visitor came to your website from a Google ad and browsed a few products. Two days later he came back via your Facebook post and finished the purchase.
 
-Test the installation by checking the version number:
-`$ ruby -v`
+## Share insights with your team
+When you discover bad user experience on your website, simply send a link with the recording to your UX designer or developer, so everyone can see what the issue is.
 
-### Installing the ZAT gem
-`$ gem install zendesk_apps_tools`
+## Other unique things Smartlook offers
+- Always on recording - Visitor recording is continuous. Smartlook will keep recording all visitors
+- Recording ajax & single-page app - We support all of the latest frontend frameworks (AngularJS, React, Ember, …)
+- Unlimited number of website
+- Translated in 15 languages
 
-After application editions run validator
-`$ zat validate`
+Please submit bug reports to [https://github.com/smartlook/smartlook-integration-zendesk/issues](https://github.com/smartlook/smartlook-integration-zendesk/issues). Pull requests are welcome.
 
-If everything is OK then
-`$ gulp`
-`$ zat package`
-and you are ready to upload it into Zendesk Marketplace
+### Screenshots:
+![screenshot-0](https://github.com/smartlook/smartlook-integration-zendesk/blob/master/src/assets/screenshot-0.png?raw=true "Screenshot 1")
 
-### Developing
-`$ zat server`
+![screenshot-1](https://github.com/smartlook/smartlook-integration-zendesk/blob/master/src/assets/screenshot-1.png?raw=true "Screenshot 2")
 
-Go to Zendesk ticket and add on the end of URL `?zat=true` and allow loading external unsafe scripts in your browser
-
+![screenshot-2](https://github.com/smartlook/smartlook-integration-zendesk/blob/master/src/assets/screenshot-2.png?raw=true "Screenshot 3")
