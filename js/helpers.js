@@ -48,14 +48,13 @@ Handlebars.registerHelper('deviceIcon', function(platform) {
 
 Handlebars.registerHelper('timestampToDate', function(timestamp) {
 	var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
-	var date = new Date(timestamp * 1000);
+	var date = new Date(typeof timestamp === 'string' ? timestamp : timestamp * 1000);
 	var minutes = "0" + date.getMinutes();
 
 	var hours = date.getHours();
 	var postfix = hours >= 12 ? 'pm' : 'am';
 	var hours = hours % 12;
 	var hours = hours ? hours : 12;
-
 
 	return months[date.getMonth()] + ' ' + date.getDate() + ',' + ' ' + hours + ':' + minutes.substr(-2) + ' ' + postfix;
 });
@@ -83,6 +82,6 @@ function padNumber(number) {
 	if (number < 10) {
 		return "0" + number;
 	}
-	
+
 	return number;
 }
