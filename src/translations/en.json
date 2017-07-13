@@ -1,6 +1,8 @@
 {
   "app": {
-    "description": "Smartlook is a simple tool which records the screens of real users on your website. You can see what visitors clicked with their mouse, what they filled into a form field, where they spend most of their time, and how they browse through each page.",
+    "short_description": "Smartlook is a simple tool which records the screens of visitors on your website",
+    "long_description": "Smartlook is a simple tool which records the screens of real users on your website. You can see what visitors clicked with their mouse, what they filled into a form field, where they spend most of their time, and how they browse through each page.",
+    "installation_instructions": "Go to Smartlook dashboard, account settings, integrations and enable Zendesk integration. Copy the generated API token. Install Smartlook application and fill in provided API token. Smartlook recordings must be tagged with the visitors email address. Follow the Smartlook API documentation how to achieve that.",
     "name": "Smartlook",
     "parameters": {
       "API token"    : { "label": "API token", "helpText": "API token" }
