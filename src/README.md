@@ -17,11 +17,11 @@ When you discover bad user experience on your website, simply send a link with t
 - Unlimited number of website
 - Translated in 15 languages
 
-Please submit bug reports to [https://github.com/smartsupp/smartlook-zendesk/issues](https://github.com/smartsupp/smartlook-zendesk/issues). Pull requests are welcome.
+Please submit bug reports to [https://github.com/smartlook/smartlook-integration-zendesk/issues](https://github.com/smartlook/smartlook-integration-zendesk/issues). Pull requests are welcome.
 
 ### Screenshots:
-![screenshot-0](https://github.com/smartsupp/smartlook-zendesk/blob/master/src/assets/screenshot-0.png "Screenshot 1")
+![screenshot-0](https://github.com/smartlook/smartlook-integration-zendesk/blob/master/src/assets/screenshot-0.png?raw=true "Screenshot 1")
 
-![screenshot-1](https://github.com/smartsupp/smartlook-zendesk/blob/master/src/assets/screenshot-1.png "Screenshot 2")
+![screenshot-1](https://github.com/smartlook/smartlook-integration-zendesk/blob/master/src/assets/screenshot-1.png?raw=true "Screenshot 2")
 
-![screenshot-2](https://github.com/smartsupp/smartlook-zendesk/blob/master/src/assets/screenshot-2.png "Screenshot 3")
+![screenshot-2](https://github.com/smartlook/smartlook-integration-zendesk/blob/master/src/assets/screenshot-2.png?raw=true "Screenshot 3")
