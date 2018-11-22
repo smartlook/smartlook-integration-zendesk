@@ -4,10 +4,10 @@
   "description": "Zendesk marketplace application",
   "main": "Gulpfile.js",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-rename": "^1.4.0",
-    "gulp-minify": "^1.0.0",
-    "gulp-clean-css": "^4.0.0"
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-rename": "^1.4.0"
   },
   "scripts": {
     "build": "gulp"
@@ -16,7 +16,7 @@
     "type": "git",
     "url": "git+https://github.com/smartsupp/smartlook-zendesk.git"
   },
-  "author": "Michal Hlavka <michal.hlavka@gmail.com>",
+  "author": "Smartlook",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/smartsupp/smartlook-zendesk/issues"

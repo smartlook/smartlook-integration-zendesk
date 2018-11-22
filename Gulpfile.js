@@ -22,4 +22,4 @@ gulp.task('minify-css', () => {
 });
 
 
-gulp.task('default', ['minify-js', 'minify-css']);
+gulp.task('default', gulp.parallel('minify-js', 'minify-css'));
