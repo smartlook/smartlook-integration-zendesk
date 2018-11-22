@@ -24,7 +24,7 @@ After application editions run validator
 `$ zat validate`
 
 If everything is OK then
-`$ gulp`
+`$ npm run build`
 `$ zat package`
 and you are ready to upload it into Zendesk Marketplace
 

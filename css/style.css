@@ -3,6 +3,10 @@ body {
 	font-size: 13px;
 }
 
+a {
+	color: #4693e0 !important;
+}
+
 #loading {
 	text-align: center;
 	padding-top: 80px;
@@ -22,15 +26,34 @@ body {
     font-size: 1.4em;
 }
 
-.right-col {
-	display: inline-block;
-	float: right;
-	padding-right: 5px;
+.session {
+	display: flex;
+	height: 40px;
+	align-items: center;
+	padding: 0 8px;
+	border: 1px solid #fafafa;
 }
 
-.left-col {
-	display: inline-block;
-	float: left;
+.session__play {
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.session__duration {
+	margin-left: 16px;
+}
+
+.session__date {
+	display: flex;
+	margin-left: 16px;
+}
+
+.session__date-time {
+	margin-left: 4px;
+}
+
+.session__device {
+	margin-left: auto;
 }
 
 .datetime {

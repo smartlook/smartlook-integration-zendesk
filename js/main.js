@@ -18,7 +18,7 @@ APP.getSessions = function(client, token, email) {
 		data: {
 			apiKey: token,
 			filters: {
-				visitorEmail: email
+				visitorEmail: email || ''
 			},
 			sorters: {
 				timeStart: -1

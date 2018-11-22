@@ -46,17 +46,24 @@ Handlebars.registerHelper('deviceIcon', function(platform) {
 	return platform;
 });
 
-Handlebars.registerHelper('timestampToDate', function(timestamp) {
-	var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
-	var date = new Date(typeof timestamp === 'string' ? timestamp : timestamp * 1000);
-	var minutes = "0" + date.getMinutes();
+Handlebars.registerHelper('toDate', function(dateString) {
+	var date = new Date(dateString);
 
-	var hours = date.getHours();
-	var postfix = hours >= 12 ? 'pm' : 'am';
-	var hours = hours % 12;
-	var hours = hours ? hours : 12;
+	if (!!date.toLocaleDateString) {
+		return date.toLocaleDateString();
+	}
 
-	return months[date.getMonth()] + ' ' + date.getDate() + ',' + ' ' + hours + ':' + minutes.substr(-2) + ' ' + postfix;
+	return dateString;
+});
+
+Handlebars.registerHelper('toTime', function(dateString) {
+	var date = new Date(dateString);
+
+	if (!!date.toLocaleTimeString) {
+		return date.toLocaleTimeString();
+	}
+
+	return '';
 });
 
 function formatSeconds(seconds) {
