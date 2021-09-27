@@ -11,12 +11,13 @@ APP.init = function() {
 	);
 }
 
-APP.getSessions = function(client, token, email) {
+APP.getSessions = function(client, email) {
 	var sessions = {
-		url:'https://www.smartlook.com/api/sessions.list',
+		url: 'https://www.smartlook.com/api/sessions.list',
+		headers: {"apiKey": "{{setting.token}}"},
+		secure: true,
 		type:'POST',
 		data: {
-			apiKey: token,
 			filters: {
 				visitorEmail: email || ''
 			},
@@ -28,7 +29,16 @@ APP.getSessions = function(client, token, email) {
 
 	client.request(sessions).then(
 		function(data) {
-			APP.showSessions(client, data);
+			if (!data.ok) {
+				APP.templateCompile({
+					'status': 'Error',
+					'statusText': data.error
+					},
+					"error-template"
+				)
+			} else {
+				APP.showSessions(client, data);
+			}
 		},
 		function(response) {
 			APP.showError(response);
@@ -46,7 +56,7 @@ APP.getUser = function(client, id) {
 	client.request(user).then(
 		function(data) {
 			client.metadata().then(function(metadata) {
-				APP.getSessions(client, metadata.settings['API token'], data.user.email);
+				APP.getSessions(client, data.user.email);
 			});
 		},
 		function(response) {

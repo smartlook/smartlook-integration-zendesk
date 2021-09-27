@@ -33,3 +33,12 @@ and you are ready to upload it into Zendesk Marketplace
 
 Go to Zendesk ticket and add on the end of URL `?zat=true` and allow loading external unsafe scripts in your browser
 
+
+## New Developing
+`cd src/`
+`$ docker build -t docker_hub_login/zat:1.0 .`
+`$ docker-compose up`
+
+Go to Zendesk ticket and add on the end of URL `?zat=true` and allow loading external unsafe scripts in your browser
+
+Now you can modify your code and after reload Zendesk you have a new update Smartlook App, without rebuilding docker image
