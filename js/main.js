@@ -13,8 +13,8 @@ APP.init = function() {
 
 APP.getSessions = function(client, email) {
 	var sessions = {
-		url: 'https://www.smartlook.com/api/sessions.list',
-		headers: {"apiKey": "{{setting.token}}"},
+		url: 'https://fiona.smartlook.com/api/sessions.list',
+		headers: {"x-apiKey": "{{setting.token}}"},
 		secure: true,
 		type:'POST',
 		data: {

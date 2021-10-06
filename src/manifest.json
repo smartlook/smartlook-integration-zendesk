@@ -12,6 +12,7 @@
       "ticket_sidebar": "assets/iframe.html"
     }
   },
+  "domainWhitelist": ["fiona.smartlook.com"],
   "parameters": [
     {
       "name": "token",

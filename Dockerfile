@@ -18,6 +18,6 @@ WORKDIR /app
 # CMD ["zat", "server", "--path", "src/", "--bind", "0.0.0.0", "-c", "settings.json"]
 
 # CMD ["ls"]
-CMD ["zat", "server", "--path", "./", "--bind", "0.0.0.0", "--app-id=360003544678"]
+CMD ["zat", "server", "--path", "./", "--bind", "0.0.0.0", "--app-id=360003557098"]
 
 EXPOSE 4567
