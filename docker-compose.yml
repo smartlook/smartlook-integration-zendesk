@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  service:
+    build: ./
+    image: smartlook/zat:1.0
+    container_name: Zendesk-apps-tools
+    working_dir: /app
+    volumes:
+      - ./src/.:/app
+    ports:
+      - "4567:4567"

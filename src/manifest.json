@@ -2,7 +2,7 @@
   "name": "Smartlook",
   "author": {
     "name": "Smartlook",
-    "email": "info@smartlook.com",
+    "email": "support@smartlook.com",
     "url": "https://www.smartlook.com"
   },
   "defaultLocale": "en",
@@ -12,14 +12,16 @@
       "ticket_sidebar": "assets/iframe.html"
     }
   },
+  "domainWhitelist": ["fiona.smartlook.com"],
   "parameters": [
     {
-      "name": "API token",
+      "name": "token",
       "type": "text",
+      "secure": true,
       "required": true
     }
   ],
-  "version": "2.0",
+  "version": "2.1",
   "frameworkVersion": "2.0",
-  "termsConditionsURL": "https://www.smartlook.com/conditions"
+  "termsConditionsURL": "https://help.smartlook.com/en/articles/3244453-terms-of-service"
 }

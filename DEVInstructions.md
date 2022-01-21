@@ -1,3 +1,26 @@
+# New Developing through Docker Image
+`$ docker-compose up --build`
+
+In the Dockerfile you have to set parameter --app-id to relevant ID, which you have installed as private on zendesk server.
+
+Go to Zendesk ticket and add on the end of URL `?zat=true` and allow loading external unsafe scripts in your browser
+
+Now you can modify your code and after reload Zendesk page you have a new update Smartlook App, without rebuilding docker image. (Only if it without changes on docker image)
+
+
+## Installing the ZAT gem
+`$ gem install zendesk_apps_tools`
+
+After application editions run validator
+`$ zat validate`
+
+If everything is OK then
+`$ npm run build`
+`$ zat package`
+and you are ready to upload it into Zendesk Marketplace
+
+### Now you can skip next steps...
+
 # Smartlook Zendesk application
 Zendesk marketplace application
 
@@ -32,4 +55,6 @@ and you are ready to upload it into Zendesk Marketplace
 `$ zat server`
 
 Go to Zendesk ticket and add on the end of URL `?zat=true` and allow loading external unsafe scripts in your browser
+
+
 
