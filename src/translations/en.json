@@ -5,7 +5,14 @@
     "installation_instructions": "Installation instructions:\n\n* Log in to your Smartlook account at www.smartlook.com.\n* Go to Account (menu in the upper right corner).\n* Select Integrations.\n* Generate Token for Zendesk.\n* Sign in to your Zendesk account and install Smartlook app.\n* Enter your Smartlook Token and click install.\n* All done -> if the customer who submitted the ticket is found in Smartlook you can watch his recordings in Zendesk apps sidebar on the right.\n\nSee our Zendesk [integration guide](https://www.smartlook.com/help/zendesk/) for detailed setup instructions.",
     "name": "Smartlook",
     "parameters": {
-      "token"    : { "label": "token", "helpText": "token" }
+      "token": {
+        "label": "token",
+        "helpText": "API token"
+      },
+      "region": {
+        "label": "region",
+        "helpText": "region (eu or us)"
+      }
     }
   }
 }
