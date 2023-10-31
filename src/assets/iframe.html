@@ -20,16 +20,16 @@
 			{{#each sessions}}
 				<div class="session">
 					<div class="session__play">
-						<a href="{{publicUrl}}" target="_blank" rel="noopener">
+						<a href="{{dashboardURL}}" target="_blank" rel="noopener">
 							<i class="fa fa-play-circle" aria-hidden="true"></i>
 						</a> 
 					</div>
 					<div class="session__duration">
-						{{secondsFormatting sessionDuration}}
+						{{secondsFormatting duration}}
 					</div>
 					<div class="session__date">
-						<div class="session__date-date">{{toDate timeStart}}</div>
-						<div class="session__date-time">{{toTime timeStart}}</div>
+						<div class="session__date-date">{{toDate startedAt}}</div>
+						<div class="session__date-time">{{toTime startedAt}}</div>
 					</div>
 					<div class="session__device">
 						<i class="fa space grey fa-{{deviceIcon deviceType}}" aria-hidden="true"></i>

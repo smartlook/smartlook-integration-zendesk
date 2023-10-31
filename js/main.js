@@ -12,24 +12,36 @@ APP.init = function() {
 }
 
 APP.getSessions = function(client, email) {
-	var sessions = {
-		url: 'https://fiona.smartlook.com/api/sessions.list',
-		headers: {"x-apiKey": "{{setting.token}}"},
-		secure: true,
-		type:'POST',
-		data: {
-			filters: {
-				visitorEmail: email || ''
-			},
-			sorters: {
-				timeStart: -1
+	const data = {
+		filters: [
+			{
+				name: "user_email",
+				operator: "is",
+				value: email || ''
 			}
+	
+		],
+		sort: {
+			timeStart: "desc"
 		}
-	};
+	}
+
+	const region = "{{setting.region}}" || 'eu'
+
+	var sessions = {
+		url: `https://api.${region}.smartlook.cloud/api/v1/sessions/search`,
+		type:'POST',
+		headers: {
+			"Authorization": "Bearer {{setting.token}}",
+			"Content-Type": "application/json"
+		},
+		secure: true,
+		data: JSON.stringify(data)
+	}
 
 	client.request(sessions).then(
 		function(data) {
-			if (!data.ok) {
+			if (data.response >= 300) {
 				APP.templateCompile({
 					'status': 'Error',
 					'statusText': data.error
@@ -66,7 +78,7 @@ APP.getUser = function(client, id) {
 }
 
 APP.showSessions = function(client, data) {
-	if (typeof data.sessions === 'undefined' || !data.sessions.length) {
+	if (typeof data.sessions === 'undefined' || data.totalSessionsCount === 0) {
 		APP.templateCompile({}, "noRecordings-template");
 		client.invoke('resize', { width: '100%', height: '80px' });
 		return;

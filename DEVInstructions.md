@@ -15,9 +15,9 @@
 
 `$ docker-compose up --build`
 
-In the Dockerfile you have to set parameter --app-id to relevant ID, which you have installed as private on zendesk server.
-
-Go to Zendesk ticket and add on the end of URL `?zat=true` and allow loading external unsafe scripts in your browser
+In the Dockerfile you have to set parameter --app-id to relevant ID, which you have installed as private on zendesk server.<br>
+Here you can find an ID: https://d3v-smartlook.zendesk.com/api/support/apps/installations.json<br>
+Go to Zendesk ticket and add on the end of URL `?zat=true` and allow loading external unsafe scripts in your browser<br>
 
 Now you can modify your code and after reload Zendesk page you have a new update Smartlook App, without rebuilding docker image. (Only if it without changes on docker image)
 
@@ -61,12 +61,13 @@ Test the installation by checking the version number:
 
 `$ gem install zendesk_apps_tools`
 
-After application editions run validator
+After application editions run validator in src folder <br>
+`$ cd src` <br>
 `$ zat validate`
 
-If everything is OK then
-`$ npm run build`
-`$ zat package`
+If everything is OK then<br>
+`$ npm run build`<br>
+`$ zat package`<br>
 and you are ready to upload it into Zendesk Marketplace
 
 ### Developing
