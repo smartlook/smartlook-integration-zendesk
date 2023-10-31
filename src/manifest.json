@@ -12,13 +12,23 @@
       "ticket_sidebar": "assets/iframe.html"
     }
   },
-  "domainWhitelist": ["fiona.smartlook.com"],
+  "domainWhitelist": [
+    "api.eu.smartlook.cloud",
+    "api.us.smartlook.cloud"
+  ],
   "parameters": [
     {
       "name": "token",
       "type": "text",
       "secure": true,
       "required": true
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "secure": false,
+      "required": false,
+      "default": "eu"
     }
   ],
   "version": "2.1",
