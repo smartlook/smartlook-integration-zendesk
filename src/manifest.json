@@ -1,5 +1,4 @@
 {
-  "name": "Smartlook",
   "author": {
     "name": "Smartlook",
     "email": "support@smartlook.com",
@@ -13,8 +12,7 @@
     }
   },
   "domainWhitelist": [
-    "api.eu.smartlook.cloud",
-    "api.us.smartlook.cloud"
+    "eu.api-gateway.smartlook.com"
   ],
   "parameters": [
     {
@@ -22,16 +20,9 @@
       "type": "text",
       "secure": true,
       "required": true
-    },
-    {
-      "name": "region",
-      "type": "text",
-      "secure": false,
-      "required": false,
-      "default": "eu"
     }
   ],
-  "version": "3.0",
+  "version": "3.1",
   "frameworkVersion": "2.0",
   "termsConditionsURL": "https://help.smartlook.com/en/articles/3244453-terms-of-service"
 }

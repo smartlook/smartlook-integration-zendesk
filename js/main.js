@@ -12,36 +12,28 @@ APP.init = function() {
 }
 
 APP.getSessions = function(client, email) {
-	const data = {
-		filters: [
-			{
-				name: "user_email",
-				operator: "is",
-				value: email || ''
-			}
-	
-		],
-		sort: {
-			timeStart: "desc"
-		}
-	}
-
-	const region = "{{setting.region}}" || 'eu'
-
 	var sessions = {
-		url: `https://api.${region}.smartlook.cloud/api/v1/sessions/search`,
-		type:'POST',
+		url: 'https://eu.api-gateway.smartlook.com/legacy/api/sessions.list',
 		headers: {
-			"Authorization": "Bearer {{setting.token}}",
+			"x-apiKey": "{{setting.token}}",
 			"Content-Type": "application/json"
 		},
 		secure: true,
-		data: JSON.stringify(data)
+		type:'POST',
+		data: JSON.stringify({
+			"filters": {
+				"visitorEmail": email || ""
+			},
+			"sorters": {
+				"timeStart": -1
+			}
+		}),
+		contentType: 'application/json',
 	}
 
 	client.request(sessions).then(
 		function(data) {
-			if (data.response >= 300) {
+			if (!data.ok) {
 				APP.templateCompile({
 					'status': 'Error',
 					'statusText': data.error
@@ -78,7 +70,7 @@ APP.getUser = function(client, id) {
 }
 
 APP.showSessions = function(client, data) {
-	if (typeof data.sessions === 'undefined' || data.totalSessionsCount === 0) {
+	if (typeof data.sessions === 'undefined' || !data.sessions.length) {
 		APP.templateCompile({}, "noRecordings-template");
 		client.invoke('resize', { width: '100%', height: '80px' });
 		return;

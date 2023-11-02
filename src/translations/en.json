@@ -7,11 +7,7 @@
     "parameters": {
       "token": {
         "label": "token",
-        "helpText": "API token"
-      },
-      "region": {
-        "label": "region",
-        "helpText": "region (eu or us)"
+        "helpText": "token"
       }
     }
   }
